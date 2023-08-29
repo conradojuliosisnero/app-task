@@ -15,10 +15,10 @@
     <main class="container">
 
         <!-- formulario para gregar tareas  -->
-        <form action="" method="post" class="form">
+        <form method="post" class="form">
             <div class="form__tittle"><label>Add Task</label></div>
-            <input class="add__task--input" type="text">
-            <button class="button_task" name="btn" type="submit">+</button>
+            <textarea class="add__task" name="tarea" cols="30" rows="10"></textarea>
+            <button class="button_task" name="insert" type="submit">+</button>
         </form>
 
         <!-- areas de tareas completadas  -->
@@ -30,9 +30,24 @@
 
         <!-- validacion en caso que el campo este vacio  -->
         <?php
-        if (isset($_POST['btn'])) {
-            echo 'insertado';
+
+        if (isset($_POST['insert'])) {
+            $tarea = $_POST['tarea'];
+            if (!empty($tarea)) {
+                require "./config.php";
+                $query = $conect-> query("INSERT INTO task (tarea) VALUES ('$tarea')");
+                if ($query) {
+                    header("location: index.php");
+                }
+            } else {
+                ?>
+                <div class="label__error">
+                    <label>Error el campo esta vacio</label>
+                </div>
+        <?php
+            }
         }
+
         ?>
 
     </main>
