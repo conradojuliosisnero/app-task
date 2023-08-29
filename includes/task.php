@@ -16,35 +16,33 @@
 
         <!-- formulario para gregar tareas  -->
         <form method="post" class="form">
-            <div class="form__tittle"><label>Add Task</label></div>
+            <div class="form__tittle"><label>Añada Aqui sus tareas</label></div>
             <textarea class="add__task" name="tarea" cols="30" rows="10"></textarea>
-            <button class="button_task" name="insert" type="submit">+</button>
+            <button class="button_task" name="insert" type="submit">Añadir</button>
         </form>
-
-        <!-- areas de tareas completadas  -->
-        <div class="task__completed">
-            <div class="task__completed--tittle">
-                <h2>TASK COMPLETED</h2>
-            </div>
-        </div>
-
         <!-- validacion en caso que el campo este vacio  -->
         <?php
+        
         // si el textarea esta vacio entonces... 
         if (isset($_POST['insert'])) {
 
             $tarea = $_POST['tarea'];
+            
             // si no esta vacio 
             if (!empty($tarea)) {
+                
                 // inportamos el archivo config 
                 require "./config.php";
+
                 // guardamos la informacion del textarea en la BD 
                 $query = $conect->query("INSERT INTO task (tarea) VALUES ('$tarea')");
+        
                 // si query fue exitoso redirigimos a tareas completadas 
                 if ($query) {
                     header("location: index.php");
                 }
             } else {
+        
                 // imprimimos esto en pantalla 
         ?>
                 <div class="label__error">

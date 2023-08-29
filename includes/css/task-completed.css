@@ -1,0 +1,26 @@
+/* contenedor tareas completadas  */
+.container .task__completed {
+	width: 450px;
+	max-width: 550px;
+	min-width: 350px;
+	height: 450px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* flex-direction: column; */
+	background-color: #ffffff;
+	border-radius: 0.7em;
+	position: relative;
+	padding: 20px;
+}
+
+/* tabla de tareas  */
+.container .task__completed .task__completed--tittle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
+	position: relative;
+	color: #5b5b5b;
+}
