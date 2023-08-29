@@ -8,22 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>App task</title>
+    <title>Editar Tareas</title>
 </head>
 
 <body>
+    <?php
+    require "./config.php";
+
+    $id_tarea = $_GET['id'];
+
+    $sql = $conect->query("SELECT * FROM task WHERE id = '$id_tarea'");
+    $row = $sql->fetch_assoc();
+    ?>
+
     <main class="container">
+
         <!-- formulario para gregar tareas  -->
+
         <form method="post" class="form">
-            <div class="form__tittle"><label>Añadir Tareas</label></div>
-            <textarea class="add__task" name="tarea" cols="30" rows="10"></textarea>
-            <button class="button_task" name="insert" type="submit">Añadir</button>
+
+            <!-- titulo del contenedor  -->
+            <div class="form__tittle"><label>Editar Tarea</label></div>
+
+            <!-- text area  -->
+            <textarea class="add__task" name="tarea" cols="30" rows="10"><?= $row['tarea'] ?></textarea>
+            <button class="button_task" name="editar" type="submit">Editar</button>
         </form>
+
         <!-- validacion en caso que el campo este vacio  -->
         <?php
 
         // si el textarea esta vacio entonces... 
-        if (isset($_POST['insert'])) {
+        if (isset($_POST['editar'])) {
 
             $tarea = $_POST['tarea'];
 
@@ -34,7 +50,7 @@
                 require "./config.php";
 
                 // guardamos la informacion del textarea en la BD 
-                $query = $conect->query("INSERT INTO task (tarea) VALUES ('$tarea')");
+                $query = $conect->query("UPDATE task SET tarea = '$tarea' WHERE id = '$id_tarea'");
 
                 // si query fue exitoso redirigimos a tareas completadas 
                 if ($query) {

@@ -49,9 +49,17 @@
 	background-color: #f8f4c8;
 }
 
+.btn__editar:hover{
+	background-color: #f6ec84;
+}
+
 .btn__eliminar {
 	background-color: #ee9191;
     color: #ffffff;
+}
+
+.btn__eliminar:hover{
+	background-color: #e55858;
 }
 
 .btn__link{
