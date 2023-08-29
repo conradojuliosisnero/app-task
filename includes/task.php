@@ -18,6 +18,7 @@
             <div class="form__tittle"><label>Añadir Tareas</label></div>
             <textarea class="add__task" name="tarea" cols="30" rows="10"></textarea>
             <button class="button_task" name="insert" type="submit">Añadir</button>
+            <a href="index.php" class="btn__vertareas">Ver tareas</a>
         </form>
         <!-- validacion en caso que el campo este vacio  -->
         <?php

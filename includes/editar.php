@@ -32,7 +32,7 @@
 
             <!-- text area  -->
             <textarea class="add__task" name="tarea" cols="30" rows="10"><?= $row['tarea'] ?></textarea>
-            <button class="button_task" name="editar" type="submit">Editar</button>
+            <button class="button_task--editar " name="editar" type="submit">Editar</button>
         </form>
 
         <!-- validacion en caso que el campo este vacio  -->

@@ -65,3 +65,20 @@
 .btn__link{
     text-decoration: none;    
 }
+
+.btn-tarea--return button{
+	position: fixed;
+	border-radius: 0.7em;
+	background-color: #3cd9a2;
+	width: 150px;
+	height: 40px;
+	color: #ffffff;
+	padding: 10px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	bottom: 50px;
+	left: 50%;
+	transform: translate(-50%);
+}

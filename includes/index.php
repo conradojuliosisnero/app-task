@@ -17,7 +17,7 @@
         <div class="row">
             <table border="1" class="table">
                 <tr>
-                    <th></th>
+                    <th>ID</th>
                     <th>Tareas</th>
                     <th>Fecha</th>
                     <th>Opciones</th>
@@ -47,6 +47,9 @@
         </div>
     </main>
 
+    <a href="./task.php" class="btn-tarea--return">
+        <button>Agregar Mas Tareas</button>
+    </a>
 
 </body>
 

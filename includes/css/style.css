@@ -8,8 +8,9 @@
 }
 
 body {
-	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+	background-color: #dddbdb;
 }
+
 /* contenedor principal  */
 .container {
 	display: flex;
@@ -19,6 +20,7 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
 /* contenedor del formulario  */
 .container .form {
 	width: 650px;
@@ -70,18 +72,58 @@ body {
 	border-radius: 0.7em;
 	border: none;
 	outline: none;
-	background-color: #1784c3;
+	background-color: #3cd9a2;
 	color: #ffffff;
 	font-weight: 600;
 	padding: 10px 20px;
+	width: 350px;
+	transition: box-shadow 0.2s ease;
+	cursor: pointer;
+	margin-bottom:20px ;
+}
+
+.btn__vertareas{
+	font-size: 1.2em;
+	border-radius: 0.7em;
+	border: none;
+	outline: none;
+	background-color: #3cd9a2;
+	color: #ffffff;
+	font-weight: 600;
+	padding: 10px 20px;
+	width: 350px;
+	transition: box-shadow 0.2s ease;
+	cursor: pointer;
+	margin-bottom:20px ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.container .form .button_task:hover {
+	background-color: #2caa7e;
+	box-shadow: 0px 3px 15px 0px rgb(141, 140, 140);
+}
+
+.container .form .button_task--editar {
+	font-size: 1.2em;
+	border-radius: 0.7em;
+	border: none;
+	outline: none;
+	background-color: #f0eaaf;
+	color: #505050;
+	font-weight: 600;
+	padding: 10px 20px;
+	width: 350px;
 	transition: box-shadow 0.2s ease;
 	cursor: pointer;
 }
 
-.container .form .button_task:hover {
-	background-color: #1473aa;
-	box-shadow: 0px 3px 15px 0px rgb(141, 140, 140);
+.container .form .button_task--editar:hover{
+	background-color: #f5ea85;
 }
+
 
 /* alerta de tarea agregada incorectamente  */
 .label__error {
@@ -97,7 +139,7 @@ body {
 	border-radius: 0.7em;
 	padding: 45px 10px;
 	position: fixed;
-	left: 250px;
+	left: 150px;
 	top: 10px;
 }
 /* alerta de tarea agregada corectamente  */
