@@ -30,17 +30,23 @@
 
         <!-- validacion en caso que el campo este vacio  -->
         <?php
-
+        // si el textarea esta vacio entonces... 
         if (isset($_POST['insert'])) {
+
             $tarea = $_POST['tarea'];
+            // si no esta vacio 
             if (!empty($tarea)) {
+                // inportamos el archivo config 
                 require "./config.php";
-                $query = $conect-> query("INSERT INTO task (tarea) VALUES ('$tarea')");
+                // guardamos la informacion del textarea en la BD 
+                $query = $conect->query("INSERT INTO task (tarea) VALUES ('$tarea')");
+                // si query fue exitoso redirigimos a tareas completadas 
                 if ($query) {
                     header("location: index.php");
                 }
             } else {
-                ?>
+                // imprimimos esto en pantalla 
+        ?>
                 <div class="label__error">
                     <label>Error el campo esta vacio</label>
                 </div>
