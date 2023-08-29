@@ -15,24 +15,34 @@
 <body>
     <main class="container">
         <div class="row">
-            <table border="1">
+            <table border="1" class="table">
                 <tr>
-                    <th>Tarea</th>
+                    <th></th>
+                    <th>Tareas</th>
                     <th>Fecha</th>
                     <th>Opciones</th>
-                    <!-- <th>Columna 4</th> -->
-                    <!-- <th>Columna 5</th> -->
+                    <!-- <th>Completadas</th> -->
                 </tr>
-                <tr>
-                    <td>Dato 1</td>
-                    <td>Dato 2</td>
-                    <td>Dato 3</td>
-                </tr>
-                <tr>
-                    <td>Dato 6</td>
-                    <td>Dato 7</td>
-                    <td>Dato 8</td>
-                </tr>
+                <?php
+                require "./config.php";
+                $query = $conect->query("SELECT * FROM task");
+                foreach ($query as $key => $value) {
+
+                ?>
+                    <tr>
+                        <th scope="row"><?= $value['id'] ?></th>
+                        <td><?= $value['tarea'] ?></td>
+                        <td><?= $value['fecha'] ?></td>
+                        <td>
+                            <a class="btn__link" href="editar.php?id=<?=$value['id'];?>">
+                                <button class="btn btn__editar">Editar</button>
+                            </a>
+                            <a href="eliminar.php?id=<?=$value['id'];?>">
+                                <button class="btn btn__eliminar">Eliminar</button>
+                            </a>
+                        </td>
+                    </tr>
+                <?php }; ?>
             </table>
         </div>
     </main>
