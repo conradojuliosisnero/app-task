@@ -1,5 +1,6 @@
 App de Tareas
 La App de Tareas es una aplicación diseñada para ayudarte a gestionar tus actividades diarias de manera eficiente. Puedes crear, organizar y dar seguimiento a tus tareas de una manera sencilla y efectiva. Esta aplicación está desarrollada utilizando HTML, CSS, PHP y MySQL.
+![image](https://github.com/conradojuliosisnero/app-task/assets/111514635/1842bcb0-5b73-4da4-a25d-834c0319af58)
 
 Características
 
