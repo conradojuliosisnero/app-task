@@ -34,10 +34,8 @@
 
             <button class="btn-53">
                 <div class="original">Ver Tareas</div>
-                <div class="letters">
-                    <span>V</span>
-                    <span>e</span>
-                    <span>r</span>
+                <div class="letters" href="index.php">
+                    <span class="letters__link"><a class="link" href="index.php">Ver</a></span>
                 </div>
             </button>
             </div>

@@ -63,9 +63,7 @@ body {
 	width: 80%;
 	height: 75px;
 	margin-bottom: 30px;
-    /* font-size: .8em;
-    border-radius: .7em;
-    margin-right:30px; */
+
 }
 .container .form .contend__btn{
 	display: flex;
@@ -73,48 +71,52 @@ body {
 	justify-content: space-around;
 }
 
+/* botones de editar  */
+
+.btn__contend--editar{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 50px;
+}
+
 .container .form .button_task--editar {
-	font-size: 1.2em;
-	border-radius: 0.7em;
+	background-color: #f3f7fe;
 	border: none;
-	outline: none;
-	background-color: #f0eaaf;
-	color: #505050;
-	font-weight: 600;
-	padding: 10px 20px;
-	width: 350px;
-	transition: box-shadow 0.2s ease;
+	border-radius: 8px;
+	width: 150px;
+	height: 45px;
+	transition: .3s;
 	cursor: pointer;
+	border: solid #3b82f6 2px;
 	margin-bottom: 20px;
 }
 
 a{
 	text-decoration: none;
 }
+
 .container .form .button_task--cancelar{
-	font-size: 1.2em;
-	border-radius: 0.7em;
+	background-color: #f3f7fe;
 	border: none;
-	outline: none;
-	background-color: #f77c7c;
-	color: #505050;
-	font-weight: 600;
-	padding: 10px 20px;
-	width: 350px;
-	transition: box-shadow 0.2s ease;
+	border-radius: 8px;
+	width: 150px;
+	height: 45px;
+	border: solid #f63b3b 2px;
+	transition: .3s;
 	cursor: pointer;
-	text-decoration: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .container .form .button_task--editar:hover{
-	background-color: #f5ea85;
+	background-color: #3b82f6;
+	box-shadow: 0 0 0 5px #3b83f65f;
+	color: #fff;
 }
 
 .container .form .button_task--cancelar:hover{
-	background-color: #ec3333;
+	background-color: #f63b3b;
+	box-shadow: 0 0 0 5px #d53434;
+	color: #fff;
 }
 
 
@@ -211,6 +213,11 @@ a{
 
 .btn-53 .letters {
   display: inline-flex;
+}
+
+.btn-53 a{
+	text-decoration: none;
+	color: #ffffff;
 }
 
 .btn-53 span {
