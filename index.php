@@ -28,7 +28,7 @@
                 </tr>
                 <?php
                 require "./config.php";
-                $query = $conect->query("SELECT * FROM task");
+                $query = $conect->query("SELECT * FROM task WHERE completada = 0");
                 foreach ($query as $key => $value) {
 
                 ?>
@@ -73,9 +73,9 @@
     </button>
         </a>
 
-        <!-- <a href="./completed.php" class="btn-tarea__completada">
-            <button>Tareas Completadas</button>
-        </a> -->
+        <a href="./task-completed.php" class="btn-tarea__completada">
+            <button class="btn-53">Tareas Completadas</button>
+        </a>
     </div>
 
 </body>
