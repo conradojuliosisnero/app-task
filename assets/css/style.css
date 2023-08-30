@@ -140,6 +140,24 @@ a{
 	top: 10px;
 }
 
+.label__sucessfull{
+	color: #ffffff;
+	background-color: #58fa99;
+	font-size: 1.1em;
+	font-weight: 600;
+	width: 550px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.7em;
+	padding: 45px 10px;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%);
+	top: 10px;
+}
+
 /* btn agregar tareas  */
 .btn-53,
 .btn-53 *,
