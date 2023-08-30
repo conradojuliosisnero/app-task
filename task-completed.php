@@ -34,9 +34,9 @@
                 <?php } ?>
             </table>
         </div>
-        <a href="./index.php">
-        <button class="btn-53 btn__regresar">
-                <div class="original">Regresar</div>
+        <a href="./index.php" class="btn__regresar">
+        <button class="btn-53">
+                <div class="original ">Regresar</div>
                 <div class="letters">
                     <span>R</span>
                     <span>e</span>

@@ -23,7 +23,7 @@
 	display: flex;
 }
 
-.buttons__index{
+.buttons__index {
 	display: flex;
 	padding: 30px;
 	justify-content: space-evenly;
@@ -36,50 +36,48 @@
 
 /* btn editar tareas  */
 
-.btn{
+.btn {
 	background-color: #f3f7fe;
 	border: none;
 	border-radius: 8px;
 	width: 100px;
 	height: 45px;
-	transition: .3s;
+	transition: 0.3s;
 	cursor: pointer;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
 	background-color: #3b82f6;
 	box-shadow: 0 0 0 5px #3b83f65f;
 	color: #fff;
-  }
+}
 
-  .btn__editar{
+.btn__editar {
 	color: #3b82f6;
-  }
+}
 
-  .btn__editar:hover {
+.btn__editar:hover {
 	background-color: #3b82f6;
 	box-shadow: 0 0 0 5px #3b83f65f;
 	color: #fff;
-  }  
-  
-  .btn__eliminar{
-	color: #f63b3b;
-  }
+}
 
-  .btn__eliminar:hover {
+.btn__eliminar {
+	color: #f63b3b;
+}
+
+.btn__eliminar:hover {
 	background-color: #f63b3b;
 	box-shadow: 0 0 0 5px #cc4141;
 	color: #fff;
-  }
+}
 
-  .btn__terminar{
+.btn__terminar {
 	color: #73f77c;
-  }
+}
 
-  .btn__terminar:hover {
+.btn__terminar:hover {
 	background-color: #73f77c;
 	box-shadow: 0 0 0 5px #52b258;
 	color: #fff;
-  }
-  
-  
+}

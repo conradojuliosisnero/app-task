@@ -30,7 +30,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    flex-direction: column;
+	flex-direction: column;
 	background-color: #ffffff;
 	backdrop-filter: blur(5px);
 	border-radius: 0.7em;
@@ -43,12 +43,12 @@ body {
 	margin-bottom: 15px;
 }
 
-.tittle{
-	font-size: 6em; 
+.tittle {
+	font-size: 6em;
 	letter-spacing: -5px;
-	background: linear-gradient(45deg, #28c8c0, #3333ff); 
-	-webkit-background-clip: text; 
-	color: transparent; 
+	background: linear-gradient(45deg, #28c8c0, #3333ff);
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 /* text area  */
@@ -64,9 +64,8 @@ body {
 	width: 80%;
 	height: 75px;
 	margin-bottom: 30px;
-
 }
-.container .form .contend__btn{
+.container .form .contend__btn {
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
@@ -74,7 +73,7 @@ body {
 
 /* botones de editar  */
 
-.btn__contend--editar{
+.btn__contend--editar {
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
@@ -87,39 +86,38 @@ body {
 	border-radius: 8px;
 	width: 150px;
 	height: 45px;
-	transition: .3s;
+	transition: 0.3s;
 	cursor: pointer;
 	border: solid #3b82f6 2px;
 	margin-bottom: 20px;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
-.container .form .button_task--cancelar{
+.container .form .button_task--cancelar {
 	background-color: #f3f7fe;
 	border: none;
 	border-radius: 8px;
 	width: 150px;
 	height: 45px;
 	border: solid #f63b3b 2px;
-	transition: .3s;
+	transition: 0.3s;
 	cursor: pointer;
 }
 
-.container .form .button_task--editar:hover{
+.container .form .button_task--editar:hover {
 	background-color: #3b82f6;
 	box-shadow: 0 0 0 5px #3b83f65f;
 	color: #fff;
 }
 
-.container .form .button_task--cancelar:hover{
+.container .form .button_task--cancelar:hover {
 	background-color: #f63b3b;
 	box-shadow: 0 0 0 5px #d53434;
 	color: #fff;
 }
-
 
 /* alerta de tarea agregada incorectamente  */
 .label__error {
@@ -140,7 +138,7 @@ a{
 	top: 10px;
 }
 
-.label__sucessfull{
+.label__sucessfull {
 	color: #ffffff;
 	background-color: #58fa99;
 	font-size: 1.1em;
@@ -165,113 +163,120 @@ a{
 .btn-53 :before,
 .btn-53:after,
 .btn-53:before {
-  border: 0 solid;
-  box-sizing: border-box;
+	border: 0 solid;
+	box-sizing: border-box;
 }
 
 .btn-53 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
-  cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  line-height: 1.5;
-  margin: 0;
-  margin-bottom: 20px;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-appearance: button;
+	background-color: #000;
+	background-image: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-size: 100%;
+	line-height: 1.5;
+	margin: 0;
+	margin-bottom: 20px;
+	-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+	padding: 0;
 }
 
 .btn-53:disabled {
-  cursor: default;
+	cursor: default;
 }
 
 .btn-53:-moz-focusring {
-  outline: auto;
+	outline: auto;
 }
 
 .btn-53 svg {
-  display: block;
-  vertical-align: middle;
+	display: block;
+	vertical-align: middle;
 }
 
 .btn-53 [hidden] {
-  display: none;
+	display: none;
 }
 
 .btn-53 {
-  border: 1px solid;
-  border-radius: 999px;
-  box-sizing: border-box;
-  display: block;
-  font-weight: 900;
-  overflow: hidden;
-  padding: 1.2rem 3rem;
-  position: relative;
-  text-transform: uppercase;
+	border: 1px solid;
+	border-radius: 999px;
+	box-sizing: border-box;
+	display: block;
+	font-weight: 900;
+	overflow: hidden;
+	padding: 1.2rem 3rem;
+	position: relative;
+	text-transform: uppercase;
 }
 
 .btn-53 .original {
-  background: #fff;
-  color: #000;
-  display: grid;
-  inset: 0;
-  place-content: center;
-  position: absolute;
-  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+	background: #fff;
+	color: #000;
+	display: grid;
+	inset: 0;
+	place-content: center;
+	position: absolute;
+	transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
 .btn-53:hover .original {
-  transform: translateY(100%);
+	transform: translateY(100%);
 }
 
 .btn-53 .letters {
-  display: inline-flex;
+	display: inline-flex;
 }
 
-.btn-53 a{
+.btn-53 a {
 	text-decoration: none;
 	color: #ffffff;
 }
 
 .btn-53 span {
-  opacity: 0;
-  transform: translateY(-15px);
-  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+	opacity: 0;
+	transform: translateY(-15px);
+	transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
 }
 
 .btn-53 span:nth-child(2n) {
-  transform: translateY(15px);
+	transform: translateY(15px);
 }
 
 .btn-53:hover span {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .btn-53:hover span:nth-child(2) {
-  transition-delay: 0.1s;
+	transition-delay: 0.1s;
 }
 
 .btn-53:hover span:nth-child(3) {
-  transition-delay: 0.2s;
+	transition-delay: 0.2s;
 }
 
 .btn-53:hover span:nth-child(4) {
-  transition-delay: 0.3s;
+	transition-delay: 0.3s;
 }
 
 .btn-53:hover span:nth-child(5) {
-  transition-delay: 0.4s;
+	transition-delay: 0.4s;
 }
 
 .btn-53:hover span:nth-child(6) {
-  transition-delay: 0.5s;
+	transition-delay: 0.5s;
 }
 
+.container{
+	display: flex;
+	flex-direction: column;
+}
 
+.container .btn__regresar{
+	margin-top: 20px;
+}
