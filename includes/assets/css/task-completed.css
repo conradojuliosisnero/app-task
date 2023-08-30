@@ -1,0 +1,84 @@
+/* tabla de tareas  */
+.table {
+	width: 670px;
+	border-radius: 0.7em;
+	background-color: #ffffff;
+	padding: 25px;
+	border: none;
+}
+
+.table th {
+	border: none;
+	padding: 10px;
+}
+
+.table td {
+	border: none;
+	padding: 15px 20px;
+}
+
+.table .opciones {
+	border: none;
+	padding: 15px 20px;
+	display: flex;
+}
+
+.buttons__index{
+	display: flex;
+	padding: 30px;
+	justify-content: space-evenly;
+	width: 550px;
+	position: fixed;
+	left: 50%;
+	bottom: 0px;
+	transform: translate(-50%);
+}
+
+/* btn editar tareas  */
+
+.btn{
+	background-color: #f3f7fe;
+	border: none;
+	border-radius: 8px;
+	width: 100px;
+	height: 45px;
+	transition: .3s;
+	cursor: pointer;
+  }
+  
+  .btn:hover {
+	background-color: #3b82f6;
+	box-shadow: 0 0 0 5px #3b83f65f;
+	color: #fff;
+  }
+
+  .btn__editar{
+	color: #3b82f6;
+  }
+
+  .btn__editar:hover {
+	background-color: #3b82f6;
+	box-shadow: 0 0 0 5px #3b83f65f;
+	color: #fff;
+  }  
+  
+  .btn__eliminar{
+	color: #f63b3b;
+  }
+
+  .btn__eliminar:hover {
+	background-color: #f63b3b;
+	box-shadow: 0 0 0 5px #cc4141;
+	color: #fff;
+  }
+
+  .btn__terminar{
+	color: #73f77c;
+  }
+
+  .btn__terminar:hover {
+	background-color: #73f77c;
+	box-shadow: 0 0 0 5px #52b258;
+	color: #fff;
+  }
+  

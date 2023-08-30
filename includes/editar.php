@@ -33,6 +33,10 @@
             <!-- text area  -->
             <textarea class="add__task" name="tarea" cols="30" rows="10"><?= $row['tarea'] ?></textarea>
             <button class="button_task--editar " name="editar" type="submit">Editar</button>
+            <a href="./editar.php">
+            <button class="button_task--cancelar " name="editar" type="submit">Cancelar</button>
+            </a>
+            <!-- <a href="./editar.php" class="button_task--cancelar">Cancelar</a> -->
         </form>
 
         <!-- validacion en caso que el campo este vacio  -->
